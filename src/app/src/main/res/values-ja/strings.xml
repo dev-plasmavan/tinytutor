@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TinyTutor</string>
+    <string name="template_navigation_title">テンプレートで生成</string>
+    <string name="manual_navigation_title">手動で生成</string>
+    <string name="saved_navigation_title">保存した問題</string>
+    <string name="template_prompt_header_text">ここでは、いくつかの項目を選択することで、AIに問題を生成させることができます。具体的な内容があまり明確でない場合や、簡単に問題を作成したい場合にこの「テンプレートで生成」をお勧めします。</string>
+    <string name="field_selector">分野</string>
+    <string name="level_selector">レベル</string>
+    <string name="difficulty_selector">難易度</string>
+    <string name="certifications_selector">資格・検定</string>
+    <string name="manual_prompt_header_text">ここでは、特定の詳細を入力し、AIに問題を生成させることができます。この「手動で生成」は、具体的な内容が明確な場合や、詳細な内容の問題を生成したい場合にお勧めします。</string>
+    <string name="custom_prompt_input_field">カスタムな内容</string>
+    <string name="making_questions">問題を作成しています…</string>
+    <string name="loading">読み込んでいます…</string>
+    <string name="saved_questions">この問題を保存しました。</string>
+    <string name="error_save_questions">保存できませんでした。</string>
+    <string name="confirm_deletion">削除の確認</string>
+    <string name="confirm_deletion_content">本当にこの質問を削除してもよろしいですか？</string>
+    <string name="requirement_prompt">少なくとも１つの項目を選択する必要があります。</string>
+    <string name="requirement_input">空欄では問題を生成できません。</string>
+    <string name="delete_button">削除</string>
+    <string name="cancel_button">キャンセル</string>
+</resources>
