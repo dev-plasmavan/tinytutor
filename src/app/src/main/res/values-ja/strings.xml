@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">TinyTutor</string>
-    <string name="template_navigation_title">テンプレートで生成</string>
-    <string name="manual_navigation_title">手動で生成</string>
+    <string name="template_navigation_title">テンプレート生成</string>
+    <string name="manual_navigation_title">手動生成</string>
     <string name="saved_navigation_title">保存した問題</string>
-    <string name="template_prompt_header_text">ここでは、いくつかの項目を選択することで、AIに問題を生成させることができます。具体的な内容があまり明確でない場合や、簡単に問題を作成したい場合にこの「テンプレートで生成」をお勧めします。</string>
+    <string name="template_prompt_header_text">ここでは、いくつかの項目を選択することで、AIに問題を生成させることができます。具体的な内容があまり明確でない場合や、簡単に問題を作成したい場合にこの「テンプレート生成」をお勧めします。</string>
     <string name="field_selector">分野</string>
     <string name="level_selector">レベル</string>
     <string name="difficulty_selector">難易度</string>
     <string name="certifications_selector">資格・検定</string>
-    <string name="manual_prompt_header_text">ここでは、特定の詳細を入力し、AIに問題を生成させることができます。この「手動で生成」は、具体的な内容が明確な場合や、詳細な内容の問題を生成したい場合にお勧めします。</string>
+    <string name="manual_prompt_header_text">ここでは、特定の詳細を入力し、AIに問題を生成させることができます。この「手動生成」は、具体的な内容が明確な場合や、詳細な内容の問題を生成したい場合にお勧めします。</string>
     <string name="custom_prompt_input_field">カスタムな内容</string>
     <string name="making_questions">問題を作成しています…</string>
     <string name="loading">読み込んでいます…</string>
@@ -20,4 +20,8 @@
     <string name="requirement_input">空欄では問題を生成できません。</string>
     <string name="delete_button">削除</string>
     <string name="cancel_button">キャンセル</string>
+    <string name="about_this_app_title">このアプリについて</string>
+    <string name="about_this_app_content">この学習アプリ、「TinyTutor」では少ないプロンプトで、簡単に取り組むことができる四択問題をAIに生成してもらうことができます。\n問題の生成においては、Googleが開発・提供しているGemini Flashの最新バージョンを利用しており、アプリ側においてプロンプトを細かく調整することによって、決まった形式で問題が生成されるようになっている上、AIによって生成されるため、問題の内容、選択肢等はランダムなものになり、似たような問題に出会うことが少なくなっています。また、スマホやタブレット上で動くアプリのため、どこでもいつでも少し勉強したい時に役立ちます。\nさらに、生成された問題は保存することができ、過去に生成した問題をもう一度解くことができます。AIのモデルはアプリを定期的にアップデートすることなく、いつでも最新のバージョンで利用できます。</string>
+    <string name="data_and_privacy_title">「Gemini API 追加利用規約」より</string>
+    <string name="data_and_privacy_content">API 利用規約の「コンテンツの送信」セクションに基づきユーザーが Google に付与するライセンスは、Google の使用に関して適用法で義務付けられている範囲において、ユーザーが本サービスに送信したコンテンツ（関連するシステム命令を含むプロンプト、キャッシュされたコンテンツ、画像、動画、文書などのファイルなど）、および生成されたレスポンスにも適用されます。Google は、Google のプライバシー ポリシーに基づき、Google の企業向け機能、製品、サービスを含む Google の製品、サービス、機械学習技術の提供、改善、開発のためにこれらのデータを使用します。\nGoogle 製品の品質向上と改善のため、人間のレビュアーがお客様の API 入出力を読み取り、注釈を付け、処理することがあります。Google では、このプロセスの一環として、お客様のプライバシーを保護するための措置を講じています。これには、レビュアーが閲覧したり注釈を付けたりする前に、このデータを Google アカウント、API キー、クラウド プロジェクトから切り離すことも含まれます。機密情報、秘密情報、または個人情報を未払いサービスに送信しないでください。\nGoogle は、お客様がモデル チューニング機能にインポートまたはアップロードしたコンテンツを、明示的な目的のためにのみ使用します。チューニング コンテンツは、対応モデルが変更された場合に再チューニングを行う目的で、お客様のチューニング済みモデルに関連して保持される場合があります。チューニング済みモデルを削除すると、関連するチューニング コンテンツも削除されます。</string>
 </resources>

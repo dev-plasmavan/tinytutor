@@ -25,6 +25,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Done
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
@@ -37,6 +38,7 @@ import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -97,7 +99,21 @@ class MainActivity : ComponentActivity() {
                             colors = TopAppBarDefaults.topAppBarColors(
                                 containerColor = MaterialTheme.colorScheme.primaryContainer,
                                 titleContentColor = MaterialTheme.colorScheme.primary,
-                            )
+                            ),
+                            actions = {
+                                IconButton(
+                                    onClick = {
+                                        val intent = Intent(applicationContext, InfoActivity::class.java)
+                                        startActivity(intent)
+                                    }
+                                ) {
+                                    Icon(
+                                        imageVector = Icons.Filled.Info,
+                                        contentDescription = "About this app",
+                                        modifier = Modifier.size(ButtonDefaults.IconSize)
+                                    )
+                                }
+                            }
                         )
                     },
                     bottomBar = {
@@ -518,6 +534,10 @@ class MainActivity : ComponentActivity() {
                             }
 
                             val intent = Intent(applicationContext, ResultActivity::class.java)
+                            intent.putExtra("field", "なし")
+                            intent.putExtra("level", "なし")
+                            intent.putExtra("difficulty", "なし")
+                            intent.putExtra("certification", "なし")
                             intent.putExtra("custom_prompt", inputPrompt)
                             intent.putExtra("custom_state", customState)
 
@@ -618,11 +638,13 @@ class MainActivity : ComponentActivity() {
                                     .padding(8.dp)
                             )
 
-                            Text(
-                                text = "${it.contentField.toString()}, ${it.contentLevel.toString()}, ${it.contentDifficulty.toString()}, ${it.contentCertification.toString()}",
-                                modifier = Modifier
-                                    .padding(8.dp)
-                            )
+                            if(it.contentField != null && it.contentLevel != null && it.contentDifficulty != null && it.contentCertification != null) {
+                                Text(
+                                    text = "${it.contentField}, ${it.contentLevel}, ${it.contentDifficulty}, ${it.contentCertification}",
+                                    modifier = Modifier
+                                        .padding(8.dp)
+                                )
+                            }
 
                             ElevatedCard(
                                 elevation = CardDefaults.cardElevation(
